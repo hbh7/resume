@@ -1,3 +1,9 @@
+/*
+ * MAKE SURE TO REMOVE MY TEMPORARY "BULLSHIT" CLASS AT THE BOTTOM
+ * ~dashaw92 @ September 28, 2017
+ * <3
+ */
+
 body {
   background-color: #000;
   background: url("Background.png") no-repeat center center;
@@ -129,4 +135,10 @@ b {
 i {
   font-size:85%;
   color: #7a7a7a;
+}
+
+span.bullshit {
+	font-size: 125% !important;
+	color: #f0f !important;
+	font-weight: bolder !important;
 }
