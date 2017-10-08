@@ -1,3 +1,13 @@
+@font-face {
+font-family: Cambria;
+src: url(resouces/Cambria.ttf);
+}
+
+@font-face {
+font-family: Didot;
+src: url(resouces/Didot.ttf);
+}
+
 body {
   background-color: #000;
   background: url("Background.png") no-repeat center center;
