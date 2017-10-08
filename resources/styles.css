@@ -53,17 +53,21 @@ a {
 
 .textLeft {
   width: 40%;
+  height: 200px;
   float: left;
+  text-align: center;
   padding-left: 20%;
   padding-bottom: 25px;
 }
 
 .textRight {
   width: 20%;
+  height: 200px;
   float: right;
   text-align: center;
   padding-right: 20%;
-  padding-top: 5%;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 #main {
