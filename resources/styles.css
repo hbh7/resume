@@ -9,8 +9,8 @@ src: url(resouces/Didot.ttf);
 }
 
 body {
-  background-color: #000;
-  background: url("Background.png") no-repeat center center;
+  background-color: #97b9fd;
+  /*background: url("Background.png") no-repeat center center;*/
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
