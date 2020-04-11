@@ -12,7 +12,7 @@ a {
 }
 
 .name {
-  font-size: 3.25em;
+  font-size: 3.0em;
   font-family: 'Trocchi', serif;
   font-weight: normal;
   height: 70px;
@@ -97,6 +97,7 @@ a {
 
 @media (max-width: 700px) {
 	#main {
+        margin-top: 0;
 		width: 100%;
 	}
 }
