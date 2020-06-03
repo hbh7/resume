@@ -47,7 +47,7 @@ a {
   opacity: .65;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #toTop {
     display: none;
   }
@@ -95,7 +95,7 @@ a {
 	width: 80%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	#main {
         margin-top: 0;
 		width: 100%;
