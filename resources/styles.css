@@ -1,170 +1,174 @@
 body {
-  background-color: #97b9fd;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Roboto', sans-serif;
+   background-color: #97b9fd;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Roboto', sans-serif;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
 }
 
 .name {
-  font-size: 3.0em;
-  font-family: 'Trocchi', serif;
-  font-weight: normal;
-  height: 70px;
-  text-align: center;
-  padding-bottom: 0;
-  padding-top: 30px;
-  margin: 0;
+   font-size: 3.0em;
+   font-family: 'Trocchi', serif;
+   font-weight: normal;
+   height: 70px;
+   text-align: center;
+   padding-bottom: 0;
+   padding-top: 30px;
+   margin: 0;
 }
 
 .h {
-  font-size: 1.2em;
+   font-size: 1.2em;
 }
 
 @media (min-width: 500px) {
-  .name {
-    font-size: 3.75em;
-  }
+   .name {
+      font-size: 3.75em;
+   }
 }
 
 /* Start "to top" button making css */
 .toTop {
-  background-color: transparent;
-  position: fixed;
-  bottom: 15px;
-  right: 20px;
-  z-index: 99; /* W3Schools had this so I suppose its good to leave */
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 200px;
-  opacity: .65;
+   background-color: transparent;
+   position: fixed;
+   bottom: 15px;
+   right: 20px;
+   z-index: 99;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 5px;
+   border-radius: 200px;
+   opacity: .65;
+}
+
+.toTop img {
+   height: 64px;
+   width: 64px;
 }
 
 @media (max-width: 800px) {
-  #toTop {
-    display: none;
-  }
+   #toTop {
+      display: none;
+   }
 }
-
 
 .toTop:hover {
-  opacity: .9;
-  /* maybe an animation here in the future ¯\_(ツ)_/¯ */
+   opacity: .9;
+   /* maybe an animation here in the future ¯\_(ツ)_/¯ */
 }
+
 /* End "to top" button making css */
 
 .textBox {
-  width: 75%;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
+   width: 75%;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .textLeft {
-  width: 40%;
-  height: 200px;
-  float: left;
-  text-align: center;
-  padding-left: 20%;
-  padding-bottom: 25px;
+   width: 40%;
+   height: 200px;
+   float: left;
+   text-align: center;
+   padding-left: 20%;
+   padding-bottom: 25px;
 }
 
 .textRight {
-  width: 20%;
-  height: 200px;
-  float: right;
-  text-align: center;
-  padding-right: 20%;
-  padding-top: 50px;
-  padding-bottom: 25px;
+   width: 20%;
+   height: 200px;
+   float: right;
+   text-align: center;
+   padding-right: 20%;
+   padding-top: 50px;
+   padding-bottom: 25px;
 }
 
 #main {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-	width: 80%;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 25px;
+   width: 80%;
 }
 
 @media (max-width: 800px) {
-	#main {
-        margin-top: 0;
-		width: 100%;
-	}
+   #main {
+      margin-top: 0;
+      width: 100%;
+   }
 }
 
-
 .box0 {
-    min-height: 300px;
-    background-color: #fff;
-    border-radius: 25px 25px 0 0;
+   min-height: 300px;
+   background-color: #fff;
+   border-radius: 25px 25px 0 0;
 }
 
 .box1 {
-    min-height: 300px;
-    background-color: #e3eaff;
+   min-height: 300px;
+   background-color: #e3eaff;
 }
 
 .box2 {
-    min-height: 300px;
-    background-color: #fff;
+   min-height: 300px;
+   background-color: #fff;
 }
 
 .end {
-  border-radius: 0 0 25px 25px;
+   border-radius: 0 0 25px 25px;
 }
 
 .light-grey {
-color:#000!important;
-background-color:#f1f1f1!important;
+   color: #000 !important;
+   background-color: #f1f1f1 !important;
 }
 
 .rounded {
-border-radius:8px;
+   border-radius: 8px;
 }
 
 .bar-container {
-padding:.01em 16px;
+   padding: .01em 16px;
 }
 
 .blue {
-color:#fff!important;
-background-color:#2196F3!important;
+   color: #fff !important;
+   background-color: #2196F3 !important;
 }
 
 .padded {
-  margin-top: 20px;
+   margin-top: 20px;
 }
 
 h3 {
-  padding-top: 25px;
+   padding-top: 25px;
 }
 
 li {
-  padding-top: 10px;
+   padding-top: 10px;
 }
 
 footer {
-  text-align: center;
-  padding-top:50px;
-  padding-bottom:25px;
-  width: 100%;
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 25px;
+   width: 100%;
 }
 
 b {
-  font-size:120%
+   font-size: 120%
 }
 
 i {
-  font-size:85%;
-  color: #7a7a7a;
+   font-size: 85%;
+   color: #7a7a7a;
 }
