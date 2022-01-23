@@ -1,5 +1,5 @@
 body {
-   background-color: #97b9fd;
+   background-color: #10184f;
    background-size: cover;
    background-attachment: fixed;
    font-family: 'Roboto', sans-serif;
@@ -33,7 +33,7 @@ a {
 }
 
 /* Start "to top" button making css */
-.toTop {
+.to-top {
    background-color: transparent;
    position: fixed;
    bottom: 15px;
@@ -47,25 +47,25 @@ a {
    opacity: .65;
 }
 
-.toTop img {
+.to-top img {
    height: 64px;
    width: 64px;
 }
 
 @media (max-width: 800px) {
-   #toTop {
+   #to-top {
       display: none;
    }
 }
 
-.toTop:hover {
+.to-top:hover {
    opacity: .9;
    /* maybe an animation here in the future ¯\_(ツ)_/¯ */
 }
 
 /* End "to top" button making css */
 
-.textBox {
+.text-box {
    width: 75%;
    padding-top: 25px;
    padding-bottom: 25px;
@@ -73,7 +73,13 @@ a {
    margin-right: auto;
 }
 
-.textLeft {
+@media (max-width: 800px) {
+   .text-box {
+      width: 87.5%;
+   }
+}
+
+.text-left {
    width: 40%;
    height: 200px;
    float: left;
@@ -82,7 +88,7 @@ a {
    padding-bottom: 25px;
 }
 
-.textRight {
+.text-right {
    width: 20%;
    height: 200px;
    float: right;
@@ -93,9 +99,7 @@ a {
 }
 
 #main {
-   margin-top: 50px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 50px auto;
    border-radius: 25px;
    width: 80%;
 }
@@ -155,13 +159,6 @@ h3 {
 
 li {
    padding-top: 10px;
-}
-
-footer {
-   text-align: center;
-   padding-top: 50px;
-   padding-bottom: 25px;
-   width: 100%;
 }
 
 b {
