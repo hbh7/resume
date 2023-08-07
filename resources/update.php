@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
    if ($_POST["CICD_KEY"] === $cicd_key) {
       $output = [];
       $resultCode = 0;
-      exec("cd /var/www/html/resume && git pull 2>&1", $output, $resultCode);
+      exec("cd /var/www/html/resume && git reset --hard && git pull 2>&1", $output, $resultCode);
 
       foreach($output as $line) {
          echo $line . "\n";
