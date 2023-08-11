@@ -5,6 +5,7 @@ $env = parse_ini_file(".env");
 $cicd_key = $env["CICD_KEY"];
 if ($cicd_key == null) {
    echo "Error: CICD key not supplied in ENV file.";
+   http_response_code(500);
    die;
 }
 
