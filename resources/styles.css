@@ -171,3 +171,61 @@ h3 i {
    font-weight: normal;
    color: #7a7a7a;
 }
+
+
+
+/* Projects Section */
+
+.projects-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+}
+
+.project {
+   flex: 0 0 calc(33.33% - 43px); /* 33.33% width for three items per row, minus some margin */
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   /*max-width: 30%;*/
+   max-height: 468px;
+   border-radius: 16px;
+   background-color: rgba(0, 0, 255, 0.05);
+   transition: 0.2s;
+   padding: 16px;
+}
+
+.project:hover {
+   background-color: rgba(0, 0, 255, 0.15);
+}
+
+/* For smaller window widths, convert to a 2 or 1 item per row format */
+@media (max-width: 2000px) {
+   .project {
+      flex: 0 0 calc(50% - 40px);
+   }
+}
+@media (max-width: 1300px) {
+   .project {
+      flex: 0 0 calc(100% - 32px);
+   }
+}
+
+.project h2 {
+   text-align: center;
+   margin: 0;
+}
+
+.project p {
+   text-align: justify;
+   margin: 0;
+}
+
+.project img {
+   max-width: 100%; /* Ensure the image doesn't exceed the parent's width */
+   max-height: 100%; /* Allow the image to take its natural height within the constraints */
+   min-height: 0; /* Critical for it to not overflow the div sometimes */
+   margin: auto;
+   object-fit: contain;
+   width: 100%;
+}
