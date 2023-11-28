@@ -32,39 +32,6 @@ a {
    }
 }
 
-/* Start "to top" button making css */
-.to-top {
-   background-color: transparent;
-   position: fixed;
-   bottom: 15px;
-   right: 20px;
-   z-index: 99;
-   border: none;
-   outline: none;
-   cursor: pointer;
-   padding: 5px;
-   border-radius: 200px;
-   opacity: .65;
-}
-
-.to-top img {
-   height: 64px;
-   width: 64px;
-}
-
-@media (max-width: 800px) {
-   #to-top {
-      display: none;
-   }
-}
-
-.to-top:hover {
-   opacity: .9;
-   /* maybe an animation here in the future ¯\_(ツ)_/¯ */
-}
-
-/* End "to top" button making css */
-
 .text-box {
    width: 75%;
    padding-top: 25px;
@@ -77,25 +44,6 @@ a {
    .text-box {
       width: 87.5%;
    }
-}
-
-.text-left {
-   width: 40%;
-   height: 200px;
-   float: left;
-   text-align: center;
-   padding-left: 20%;
-   padding-bottom: 25px;
-}
-
-.text-right {
-   width: 20%;
-   height: 200px;
-   float: right;
-   text-align: center;
-   padding-right: 20%;
-   padding-top: 50px;
-   padding-bottom: 25px;
 }
 
 #main {
@@ -112,9 +60,13 @@ a {
 }
 
 .box0 {
-   min-height: 300px;
+   min-height: 150px;
    background-color: #fff;
    border-radius: 25px 25px 0 0;
+}
+
+.box0 .text-box {
+   text-align: center
 }
 
 .box1 {
@@ -172,14 +124,15 @@ h3 i {
    color: #7a7a7a;
 }
 
-
-
-/* Projects Section */
+/*
+Styles for Projects section
+*/
 
 .projects-container {
    display: flex;
    flex-wrap: wrap;
    gap: 16px;
+   padding-bottom: 24px;
 }
 
 .project {
@@ -187,7 +140,6 @@ h3 i {
    display: flex;
    flex-direction: column;
    gap: 8px;
-   /*max-width: 30%;*/
    max-height: 468px;
    border-radius: 16px;
    background-color: rgba(0, 0, 255, 0.05);
@@ -229,3 +181,96 @@ h3 i {
    object-fit: contain;
    width: 100%;
 }
+
+/*
+Styles for section menu
+ */
+
+#menu {
+   display: block;
+   position: fixed;
+   bottom: 25px;
+   right: 25px;
+   z-index: 98;
+
+   min-width: 55px;
+   min-height: 47px;
+
+   background: #c1c7ff; /* matches projects hover background color */
+   border-radius: 15px;
+
+   transition: 0.25s;
+}
+
+#menu.opened {
+   transition: 0.25s;
+   min-width: 190px;
+   min-height: 230px;
+   padding: 16px;
+}
+
+#menu-content {
+   display: none;
+   opacity: 0;
+}
+
+#menu-content.opened {
+   animation: menuFade 0.25s;
+   display: block;
+   opacity: 1;
+}
+
+@keyframes menuFade {
+   0% {
+      display: block;
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+#menu-content span {
+   font-size: 1.2em;
+   font-weight: bold;
+   display: block;
+   padding-bottom: 10px;
+}
+
+#menu-content ul {
+   list-style-type: none; /* Remove bullets */
+   padding: 0;
+   margin: 0;
+}
+
+#menu-button {
+   cursor: pointer;
+   position: fixed;
+   bottom: 29px;
+   right: 35px;
+   z-index: 99;
+}
+
+#menu-button-bar-1,
+#menu-button-bar-2,
+#menu-button-bar-3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+}
+
+.menu-button-transformed #menu-button-bar-1 {
+   transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-button-transformed #menu-button-bar-2 {
+   opacity: 0;
+}
+
+.menu-button-transformed #menu-button-bar-3 {
+   transform: translate(0, -11px) rotate(45deg);
+}
+
+

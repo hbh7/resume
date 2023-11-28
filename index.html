@@ -11,25 +11,33 @@
    <meta property="og:image" content="resources/logo.png"/>
    <meta property="og:url" content="https://hbh7.com/resume"/>
    <meta property="og:description" content="The web-based resume of Hunter Harris. A PDF version is also available."/>
+   <script async defer src="resources/scripts.js"></script>
    <title>Resume</title>
 </head>
 <body>
-   <a class="to-top" href=#top>
-      <img id="to-top" alt="Go to top" src="resources/totop.png">
-   </a>
+   <div id="menu">
+      <div id="menu-content">
+         <span>Jump to:</span>
+         <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#experience">Employment Experiences</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#coursework">Coursework</a></li>
+            <li><a href="#contact">Contact/Resources</a></li>
+         </ul>
+      </div>
+      <div id="menu-button" onclick="expandMenu(this)">
+         <div id="menu-button-bar-1"></div>
+         <div id="menu-button-bar-2"></div>
+         <div id="menu-button-bar-3"></div>
+      </div>
+   </div>
    <div id="main">
       <div class="box0">
-         <p style="padding: 15px 10px 0;text-align: center;">
-            Jump to: <a href="#experience">Employment Experiences</a> -
-                     <a href="#skills">Skills</a> -
-                     <a href="#education">Education</a> -
-                     <a href="#coursework">Coursework</a> -
-                     <a href="#projects">Projects</a> -
-                     <a href="#contact">Contact/Resources</a><br>
-         </p>
-         <a id="intro"></a>
-         <h1 class="name"><span class="h">H</span>unter <span class="h">H</span>arris</h1>
-         <div class="text-box" style="text-align: center">
+         <div class="text-box">
+            <h1 class="name"><span class="h">H</span>unter <span class="h">H</span>arris</h1>
             <p style="font-style: italic; font-size: 110%; color: #7a7a7a; padding-top: 30px">
                <a href="Hunter_Harris_Resume.pdf"><u>Download PDF Version</u></a>
             </p>
@@ -249,6 +257,104 @@
       </div>
 
       <div class="box1">
+         <a id="projects"></a>
+         <div class="text-box">
+            <h1>Projects</h1>
+            <div class="projects-container">
+
+               <div class="project">
+                  <h2>Smart Thermostat</h2>
+                  <p>
+                     Independently developing the hardware and software stacks for an open-source, highly customizable smart thermostat that can be remotely controlled, or fully automated through flexible scheduling. See the <a href="https://github.com/hbh7/SmartThermostat">GitHub repo</a> for more details.
+                  </p>
+                  <img src="https://github.com/hbh7/SmartThermostat/blob/master/repo_resources/hardware-front.jpg?raw=true" alt="Thermostat image">
+               </div>
+
+               <div class="project">
+                  <h2>Door System</h2>
+                  <p>
+                     A collaborative project to design a non-intrusive, extremely flexible keyless door unlocking system using a Raspberry Pi, Arduino, and a servo. See the <a href="https://github.com/hbh7/DoorSystem">GitHub repo</a> for more details.
+                  </p>
+                  <img src="https://github.com/hbh7/DoorSystem/blob/master/images/ui.png?raw=true" alt="Door system UI image">
+               </div>
+
+               <div class="project">
+                  <h2>Poll Buddy</h2>
+                  <p>
+                     Collaborated with a group of students as project manager and developer to design and create Poll Buddy, an interactive questionnaire platform accessible at <a href="https://pollbuddy.app">pollbuddy.app</a>. Architected and developed the main framework for the app, with the frontend in React and the backend in Express.js. Implemented a custom CI/CD system with Docker, Kubernetes, and GitHub Actions. See the <a href="https://github.com/PollBuddy">GitHub organization and repos</a> for more details.
+                  </p>
+                  <img src="https://raw.githubusercontent.com/PollBuddy/Resources/main/Branding/Poll%20Buddy%20Logo.png" alt="Poll Buddy logo">
+               </div>
+
+               <div class="project">
+                  <h2>Aperturama</h2>
+                  <p>
+                     A joint collaboration to develop a photo backup and management app that uploads to a server under your control to maximize privacy and security. Frontend written in Flutter, backend written in Express. See the <a href="https://github.com/Aperturama">GitHub organization and repos</a> for more details.
+                  </p>
+                  <img src="https://github.com/Aperturama/Aperturama-Frontend/blob/main/assets/logo.png?raw=true" alt="Aperturama logo">
+               </div>
+
+               <div class="project">
+                  <h2>RFID Attendance System</h2>
+                  <p>
+                     A proof of concept system that provides an easy way to record classroom or event attendance using student RFID badges and Raspberry Pis. Backend server system uses Node.js and MongoDB, clients use Python. Offers a web interface to view recorded attendances. See the <a href="https://github.com/hbh7/RFID-Attendance-System">GitHub repo</a> for more details.
+                  </p>
+                  <img src="https://github.com/hbh7/RFID-Attendance-System/blob/master/resources/Hardware.jpg?raw=true" alt="RFID attendance system demo">
+               </div>
+
+               <div class="project">
+                  <h2>Deciphering Kubernetes White Paper</h2>
+                  <p>
+                     Researched and wrote an in-depth overview of Kubernetes core concepts, including how to build a Kubernetes cluster and how to prepare and deploy a real-world application. Applied the aforementioned concepts to improve another ongoing project, Poll Buddy. See the <a href="https://hbh7.com/dl/kubernetes-whitepaper.pdf">white paper</a> for more details.
+                  </p>
+                  <img src="resources/whitepaper.jpg" alt="White paper table of contents">
+               </div>
+
+               <div class="project">
+                  <h2>Intro to Dockerizing All The Things!</h2>
+                  <p>
+                     Developed a workshop presentation which was delivered during several RCOS class meetings at the beginning of the semester to help students get up to speed quickly with using Docker in their projects. Provides a basic introduction to Docker, including what it is, why you'd want to use it, how to use it, and an overview of what's possible. See the <a href="https://hbh7.com/dl/intro-to-dockerizing-all-the-things.pptx">presentation slides</a> for more details.
+                  </p>
+                  <img src="resources/intro-to-dockerizing-all-the-things.jpg" alt="Presentation slide">
+               </div>
+
+               <div class="project">
+                  <h2>Water Monitoring System</h2>
+                  <p>
+                     A custom Raspberry Pi and Arduino based solution to monitor household water consumption and well pump output. Outputs data to an InfluxDB database and displayed using Grafana. See the <a href="https://github.com/hbh7/WaterMonitoringSystem">GitHub repo</a> for more details.
+                  </p>
+                  <img src="https://raw.githubusercontent.com/hbh7/WaterMonitoringSystem/main/grafana/grafana.jpg" alt="Water monitoring system dashboard">
+               </div>
+
+               <div class="project">
+                  <h2>Radiance Platform</h2>
+                  <p>
+                     A simple text-based game framework built in Rust that loads and runs games defined using yaml configuration files. See the <a href="https://github.com/Radiance-Platform/RadiancePlatform">GitHub repo</a> for more details.
+                  </p>
+                  <img src="https://raw.githubusercontent.com/Radiance-Platform/RadiancePlatform/main/resources/demo-1.jpg" alt="Radiance platform example game screenshot">
+               </div>
+
+               <div class="project">
+                  <h2>Cleanliness System</h2>
+                  <p>
+                     Partnered with a top airline company to develop a PHP based system designed to aid aircraft maintenance staff in upholding the highest standards of airplane cleanliness.
+                  </p>
+                  <img src="resources/cleanliness-system.jpg" alt="Cleanliness system demo">
+               </div>
+
+               <div class="project">
+                  <h2>Solar Energy System</h2>
+                  <p>
+                     Designed and installed a 35 panel 13 kW grid-tied solar system for a fraction of the price of competing commercial solutions. Carefully considered all requirements and building codes to ensure maximum safety and performance. Working on building a Grafana and Home Assistant based monitoring system for future analytics and monitoring.
+                  </p>
+                  <img src="resources/solar.jpg" alt="Solar production and layout chart">
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box2">
          <a id="education"></a>
          <div class="text-box">
             <h1>Education</h1>
@@ -340,7 +446,7 @@
          </div>
       </div>
 
-      <div class="box2">
+      <div class="box1">
          <a id="coursework"></a>
          <div class="text-box">
             <h1>Coursework</h1>
@@ -503,104 +609,6 @@
             </ul>
             <br>
 
-         </div>
-      </div>
-
-      <div class="box1">
-         <a id="projects"></a>
-         <div class="text-box">
-            <h1>Projects</h1>
-            <div class="projects-container">
-
-               <div class="project">
-                  <h2>Smart Thermostat</h2>
-                  <p>
-                     Independently developing the hardware and software stacks for an open-source, highly customizable smart thermostat that can be remotely controlled, or fully automated through flexible scheduling. See the <a href="https://github.com/hbh7/SmartThermostat">GitHub repo</a> for more details.
-                  </p>
-                  <img src="https://github.com/hbh7/SmartThermostat/blob/master/repo_resources/hardware-front.jpg?raw=true" alt="Thermostat image">
-               </div>
-
-               <div class="project">
-                  <h2>Door System</h2>
-                  <p>
-                     A collaborative project to design a non-intrusive, extremely flexible keyless door unlocking system using a Raspberry Pi, Arduino, and a servo. See the <a href="https://github.com/hbh7/DoorSystem">GitHub repo</a> for more details.
-                  </p>
-                  <img src="https://github.com/hbh7/DoorSystem/blob/master/images/ui.png?raw=true" alt="Door system UI image">
-               </div>
-
-               <div class="project">
-                  <h2>Poll Buddy</h2>
-                  <p>
-                     Collaborated with a group of students as project manager and developer to design and create Poll Buddy, an interactive questionnaire platform accessible at <a href="https://pollbuddy.app">pollbuddy.app</a>. Architected and developed the main framework for the app, with the frontend in React and the backend in Express.js. Implemented a custom CI/CD system with Docker, Kubernetes, and GitHub Actions. See the <a href="https://github.com/PollBuddy">GitHub organization and repos</a> for more details.
-                  </p>
-                  <img src="https://raw.githubusercontent.com/PollBuddy/Resources/main/Branding/Poll%20Buddy%20Logo.png" alt="Poll Buddy logo">
-               </div>
-
-               <div class="project">
-                  <h2>Aperturama</h2>
-                  <p>
-                     A joint collaboration to develop a photo backup and management app that uploads to a server under your control to maximize privacy and security. Frontend written in Flutter, backend written in Express. See the <a href="https://github.com/Aperturama">GitHub organization and repos</a> for more details.
-                  </p>
-                  <img src="https://github.com/Aperturama/Aperturama-Frontend/blob/main/assets/logo.png?raw=true" alt="Aperturama logo">
-               </div>
-
-               <div class="project">
-                  <h2>RFID Attendance System</h2>
-                  <p>
-                     A proof of concept system that provides an easy way to record classroom or event attendance using student RFID badges and Raspberry Pis. Backend server system uses Node.js and MongoDB, clients use Python. Offers a web interface to view recorded attendances. See the <a href="https://github.com/hbh7/RFID-Attendance-System">GitHub repo</a> for more details.
-                  </p>
-                  <img src="https://github.com/hbh7/RFID-Attendance-System/blob/master/resources/Hardware.jpg?raw=true" alt="RFID attendance system demo">
-               </div>
-
-               <div class="project">
-                  <h2>Deciphering Kubernetes White Paper</h2>
-                  <p>
-                     Researched and wrote an in-depth overview of Kubernetes core concepts, including how to build a Kubernetes cluster and how to prepare and deploy a real-world application. Applied the aforementioned concepts to improve another ongoing project, Poll Buddy. See the <a href="https://hbh7.com/dl/kubernetes-whitepaper.pdf">white paper</a> for more details.
-                  </p>
-                  <img src="resources/whitepaper.jpg" alt="White paper table of contents">
-               </div>
-
-               <div class="project">
-                  <h2>Intro to Dockerizing All The Things!</h2>
-                  <p>
-                     Developed a workshop presentation which was delivered during several RCOS class meetings at the beginning of the semester to help students get up to speed quickly with using Docker in their projects. Provides a basic introduction to Docker, including what it is, why you'd want to use it, how to use it, and an overview of what's possible. See the <a href="https://hbh7.com/dl/intro-to-dockerizing-all-the-things.pptx">presentation slides</a> for more details.
-                  </p>
-                  <img src="resources/intro-to-dockerizing-all-the-things.jpg" alt="Presentation slide">
-               </div>
-
-               <div class="project">
-                  <h2>Water Monitoring System</h2>
-                  <p>
-                     A custom Raspberry Pi and Arduino based solution to monitor household water consumption and well pump output. Outputs data to an InfluxDB database and displayed using Grafana. See the <a href="https://github.com/hbh7/WaterMonitoringSystem">GitHub repo</a> for more details.
-                  </p>
-                  <img src="https://raw.githubusercontent.com/hbh7/WaterMonitoringSystem/main/grafana/grafana.jpg" alt="Water monitoring system dashboard">
-               </div>
-
-               <div class="project">
-                  <h2>Radiance Platform</h2>
-                  <p>
-                     A simple text-based game framework built in Rust that loads and runs games defined using yaml configuration files. See the <a href="https://github.com/Radiance-Platform/RadiancePlatform">GitHub repo</a> for more details.
-                  </p>
-                  <img src="https://raw.githubusercontent.com/Radiance-Platform/RadiancePlatform/main/resources/demo-1.jpg" alt="Radiance platform example game screenshot">
-               </div>
-
-               <div class="project">
-                  <h2>Cleanliness System</h2>
-                  <p>
-                     Partnered with a top airline company to develop a PHP based system designed to aid aircraft maintenance staff in upholding the highest standards of airplane cleanliness.
-                  </p>
-                  <img src="resources/cleanliness-system.jpg" alt="Cleanliness system demo">
-               </div>
-
-               <div class="project">
-                  <h2>Solar Energy System</h2>
-                  <p>
-                     Designed and installed a 35 panel 13 kW grid-tied solar system for a fraction of the price of competing commercial solutions. Carefully considered all requirements and building codes to ensure maximum safety and performance. Working on building a Grafana and Home Assistant based monitoring system for future analytics and monitoring.
-                  </p>
-                  <img src="resources/solar.jpg" alt="Solar production and layout chart">
-               </div>
-
-            </div>
          </div>
       </div>
 
