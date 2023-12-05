@@ -13,5 +13,24 @@ function expandMenu(menuObj) {
     }
 }
 
+function setupBackground() {
+    const effect = document.querySelector("#background .effect");
+    const body = document.querySelector("body");
+    body.addEventListener("mousemove", function (event) {
+        effect.style.left = `${event.clientX}px`;
+        effect.style.top = `${event.clientY}px`;
+    });
+}
+
+
+/**
+ * Runs when the page is loaded
+ */
+function start() {
+    setupBackground();
+}
+window.addEventListener ?
+    window.addEventListener("load", start,false) :
+    window.attachEvent && window.attachEvent("onload", start);
 
 
